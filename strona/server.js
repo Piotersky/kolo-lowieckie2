@@ -353,10 +353,10 @@ module.exports = (client) => {
     }
   });
 
-  const port =  80 || process.env.PORT;
-  const hostname = "https://klchrzastaw.onrender.com";
+  const port =  10000 || process.env.PORT;
+  //const hostname = "https://klchrzastaw.onrender.com";
 
-  server.listen(port, hostname, () => {
+  server.listen(port, /*hostname,*/ () => {
     log(`Listening on port ${port}`);
   });
 };
