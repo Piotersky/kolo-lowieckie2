@@ -353,7 +353,7 @@ module.exports = (client) => {
     }
   });
 
-  port = 80;
+  port =  80 ||process.env.PORT;
 
   server.listen(port, () => {
     log(`Listening on port ${port}`);
