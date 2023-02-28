@@ -353,9 +353,10 @@ module.exports = (client) => {
     }
   });
 
-  port =  80 ||process.env.PORT;
+  const port =  80 || process.env.PORT;
+  const hostname = "https://klchrzastaw.onrender.com";
 
-  server.listen(port, () => {
+  server.listen(port, hostname, () => {
     log(`Listening on port ${port}`);
   });
 };
